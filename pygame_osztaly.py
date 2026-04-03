@@ -28,7 +28,8 @@ class Screen:
             [self.width//2, self.height//2],
             [r.choice([1, -1]), r.choice([1, -1])],
             self.paddles,
-            self.size
+            self.size,
+            self.score_height
         )
 
     def iterate(self):
@@ -61,7 +62,7 @@ class Screen:
     def draw(self):
         self.win.fill((0, 0, 0))
 
-        score_text = f"{self.scores[0]}     |      {self.scores[1]}"
+        score_text = f"{self.scores[0]}     |     {self.scores[1]}"
         img = self.font.render(score_text, True, (255, 255, 255))
         self.win.blit(img, (self.width // 2 - img.get_width() // 2, 20))
 
@@ -72,7 +73,7 @@ class Screen:
             paddle.draw(self.win)
         self.ball.draw(self.win)
 
-        for y in range(0, self.height, 40):
+        for y in range(self.score_height, self.height, 40):
             pg.draw.rect(self.win, (211, 211, 211), (self.width // 2 - 2, y, 4, 20))
 
         pg.display.flip()
