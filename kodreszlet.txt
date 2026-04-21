@@ -1,0 +1,10 @@
+Kódrészlet időspórolás érdekében
+
+if keys[w] and keys[a]: self.direction = 6
+elif keys[w] and keys[d]: self.direction = 0
+elif keys[s] and keys[a]: self.direction = 4
+elif keys[s] and keys[d]: self.direction = 2
+elif keys[w]: self.direction = 7
+elif keys[a]: self.direction = 5
+elif keys[s]: self.direction = 3
+elif keys[d]: self.direction = 1
