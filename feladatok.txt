@@ -1,0 +1,48 @@
+# SNAKE játék útinapló
+
+# 1. feladat
+# Készítsen egy 800x800px méretű képernyőt, és töltse ki egy 10x10-es négyzetráccsal!
+
+# 2. feladat
+# Készítsen egy "fejet", ami a négyzetrács egyik négyzetében helyezkedik el.
+
+# 3. feladat
+# A WASD gombokkal tudjon irányt változtatni, és másodpercenként ugorjon egyet a jelenlegi irányba.
+
+# 4. feladat
+# Készítsen egy "almát", ami a négyzetrács egyik négyzetében helyezkedik el.
+
+# 5. feladat
+# Amennyiben a fej és az alma pozíciója megegyezik, az alma ugorjon át egy véletlenszerű helyre.
+
+# 6. feladat
+# Készítsen egy "farok" listát, ami kezdetben legyen kételemű (tehát összesen 3 négyzetrács
+# hosszú snake.
+# Minden lépés a következő fázisokból áll:
+# > a "fej" jelenlegi pozícióját a farok lista elejére tesszük
+# > a "fejjel" elmozdulunk direction irányba
+# > a "farok" lista utolsó elemét töröljük
+
+# 6. feladat
+# Amennyiben a fej és az alma egy képkockában megegyezett, úgy
+# a következő lépésre ne tűntesse el a farok lista utolsó elemét.
+
+# 7. feladat
+# Adjon egy "hossz-számlálót" a képernyőre (farok lista hossza + 1)
+
+# -------------------------------------------------------------
+
+# További feladatok a gyorsaknak
+
+# 8. feladat
+# A játék indításkor álljon, SZÓKÖZ lenyomására induljon el a szimuláció.
+
+# 9. feladat
+# Amennyiben snake a képernyőről az egyik irányba kimegy, a másik oldalon folytassa a mozgást.
+
+# 10. feladat
+# Amennyiben snake feje a "farok" lista bármelyik elemén van, a játék érjen véget.
+
+# 11. feladat
+# Ahelyett, hogy a játék a 9. feladatban leírt módon érne véget, adjon egy játékszámlálót a képernyőre,
+# és veszteségkor csak kezdjünk új játékot, és adjon ehhez az értékhez egyet!

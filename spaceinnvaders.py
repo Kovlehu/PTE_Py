@@ -2,8 +2,6 @@ import pygame as pg
 
 class Screen:
     def __init__(self):
-        self.clock = pg.time.Clock()
-        self.dt = 0
         self.width = 1200
         self.height = 900
         self.size = (self.width, self.height)
@@ -12,12 +10,10 @@ class Screen:
         self.run = True
 
     def iterate(self):
-        self.dt = self.clock.tick(60) / 1000.0
-        self.event(self.dt)
-
+        self.iterate()
         self.draw
 
-    def event(self, dt):
+    def event(self):
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 self.run = False
